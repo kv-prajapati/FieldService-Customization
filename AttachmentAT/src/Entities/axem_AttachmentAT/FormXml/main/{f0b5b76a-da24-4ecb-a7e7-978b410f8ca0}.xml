@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f0b5b76a-da24-4ecb-a7e7-978b410f8ca0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{61b5aae3-7797-4b59-9d66-072e10a5c79d}" IsUserDefined="1" name="tab_1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab1_sec1" id="450b5666-8317-46de-9425-5d4823649b3d" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{849b60d6-7564-41d5-88aa-b13b2bfb1694}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contact Option" languagecode="1033" />
+                        </labels>
+                        <control id="axem_contactoption" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="axem_contactoption" disabled="false" />
+                      </cell>
+                      <cell id="{7eac3d0a-33a6-479a-9f21-de534e6a5393}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contact - For Recipient" languagecode="1033" />
+                        </labels>
+                        <control id="axem_contactforrecipient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="axem_contactforrecipient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{1577eab8-f18e-4b11-9049-49b5d0d72d18}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{51b56ff9-a1bb-45a0-b9c0-f0d3b8e49f4a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Account - For Recipient" languagecode="1033" />
+                        </labels>
+                        <control id="axem_accountforrecipient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="axem_accountforrecipient" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_sec2" id="97c24c90-dc89-4da6-a9aa-9836e043217a" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7e449d6a-213a-43fb-8087-a616f230bc71}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Document Tag" languagecode="1033" />
+                        </labels>
+                        <control id="axem_documenttag" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="axem_documenttag" disabled="false" uniqueid="{450dc153-61ba-a140-ec5e-33b619a53bd7}" />
+                      </cell>
+                      <cell id="{464b5883-c7f9-4907-9a3e-c00bebfe535f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="File Name Or System Reference" languagecode="1033" />
+                        </labels>
+                        <control id="axem_filenameorsystemreference" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="axem_filenameorsystemreference" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db6229d8-b203-458e-a399-59c7434131f6}" colspan="2" rowspan="1" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Attachment Title" languagecode="1033" />
+                        </labels>
+                        <control id="axem_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="axem_name" uniqueid="{42d3a049-19c6-9868-2455-554734e269cc}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df44ec5c-a0cf-45db-8fbc-690d6c91bd60}" locklevel="0" colspan="2" rowspan="1">
+                        <labels>
+                          <label description="Attachment Description" languagecode="1033" />
+                        </labels>
+                        <control id="axem_attachmentdescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="axem_attachmentdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4d667793-725b-3cae-5961-ec42b25981a2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date on Document" languagecode="1033" />
+                        </labels>
+                        <control id="axem_startdateondocument" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="axem_startdateondocument" disabled="false" />
+                      </cell>
+                      <cell id="{3eca8b58-575a-19e8-da2c-25d1a9a98916}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date on Document" languagecode="1033" />
+                        </labels>
+                        <control id="axem_enddateondocument" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="axem_enddateondocument" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_sec3" id="3457617e-6ceb-4889-9c34-ba0b9329d189" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bb41daa3-edab-d11d-1e84-4611254920bd}" showlabel="false" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="axem_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="axem_name" disabled="false" uniqueid="{013be4e7-7925-82a9-2b80-913ab5ba7657}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="734bd49d-c019-41ae-8583-85c5f201d8ce" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Admin" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="ce8b2b28-3c5a-4ec9-86ad-29eae2359d7a" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f790ccb8-3ee2-41dc-b4fa-b6beb32b6d99}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{adaf9dbf-6af8-4467-a6c4-c6a0b403ce04}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f3c32e68-8cd3-4398-a7f2-3963eaf27bd4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{6a317cc1-4835-469c-8d34-5a59731e1652}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Last Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d8ae3b35-3699-4f6d-b8d8-d8033a44f3b8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{e442b21e-161d-4ed6-ac8c-874ffc3928a0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{84eddc18-612b-48ca-95e6-33e8b36e131a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7d38b784-96ec-4a31-911d-d7997a5a54df}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{708739fc-5722-447c-b1da-dcb49766582b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ed090e4a-0bfb-4ccd-85cb-53a91ffdfd26}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{aab10e04-b339-407e-888c-bd31d70d9467}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cc08c94e-c71b-4e20-80ee-3541c02c2bf6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <formLibraries>
+        <Library name="axem_attachmentatjs" libraryUniqueId="{a5123ec4-1d54-47d6-a40b-e4f0a5cc5edb}" />
+      </formLibraries>
+      <events>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="onSave" libraryName="axem_attachmentatjs" handlerUniqueId="{ec0bd297-14c5-4780-a06f-50f5c34d6e8b}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions>
+        <controlDescription forControl="{013be4e7-7925-82a9-2b80-913ab5ba7657}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>axem_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>axem_name</record>
+              <entityName static="true" type="SingleLine.Text">Attachment AT</entityName>
+              <appName static="true" type="SingleLine.Text">axem_attachmentatembed_b9b2f</appName>
+              <appId static="true" type="SingleLine.Text">1ee1dfae-6ca9-4981-a991-fa8dfba32b90</appId>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>axem_name</record>
+              <entityName static="true" type="SingleLine.Text">Attachment AT</entityName>
+              <appName static="true" type="SingleLine.Text">axem_attachmentatembed_b9b2f</appName>
+              <appId static="true" type="SingleLine.Text">1ee1dfae-6ca9-4981-a991-fa8dfba32b90</appId>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>axem_name</record>
+              <entityName static="true" type="SingleLine.Text">Attachment AT</entityName>
+              <appName static="true" type="SingleLine.Text">axem_attachmentatembed_b9b2f</appName>
+              <appId static="true" type="SingleLine.Text">1ee1dfae-6ca9-4981-a991-fa8dfba32b90</appId>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

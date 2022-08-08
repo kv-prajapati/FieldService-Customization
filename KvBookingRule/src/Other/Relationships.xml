@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="msdyn_appointment_bookableresourcebooking" />
+  <EntityRelationship Name="msdyn_bookableresource_bookableresourcebooking_Crew" />
+  <EntityRelationship Name="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" />
+  <EntityRelationship Name="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" />
+  <EntityRelationship Name="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" />
+  <EntityRelationship Name="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" />
+  <EntityRelationship Name="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" />
+  <EntityRelationship Name="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" />
+  <EntityRelationship Name="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" />
+</EntityRelationships>

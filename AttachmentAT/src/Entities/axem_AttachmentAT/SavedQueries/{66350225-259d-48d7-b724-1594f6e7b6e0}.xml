@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{66350225-259d-48d7-b724-1594f6e7b6e0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="axem_name" select="1" icon="1" preview="1">
+        <row name="result" id="axem_attachmentatid">
+          <cell name="axem_contactforrecipient" width="100" />
+          <cell name="axem_documenttag" width="100" />
+          <cell name="axem_name" width="100" />
+          <cell name="axem_startdateondocument" width="100" />
+          <cell name="axem_enddateondocument" width="100" />
+          <cell name="axem_filenameorsystemreference" width="100" />
+          <cell name="axem_attachmentdescription" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="axem_attachmentat">
+          <attribute name="axem_attachmentatid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="axem_contactforrecipient" />
+          <attribute name="axem_documenttag" />
+          <attribute name="axem_startdateondocument" />
+          <attribute name="axem_enddateondocument" />
+          <attribute name="axem_filenameorsystemreference" />
+          <attribute name="axem_attachmentdescription" />
+          <attribute name="createdon" />
+          <attribute name="axem_name" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Attachment ATS" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

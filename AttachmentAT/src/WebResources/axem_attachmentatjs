@@ -1,0 +1,54 @@
+function openPage(recordId) {
+ console.log(recordId);
+ let rec = recordId.replaceAll("{","").replaceAll("}","");
+ var pageInput = {
+      pageType: "custom",
+      name: "axem_attachmentpage_e3eca",
+      entityName: "axem_attachmentat",
+      recordId: rec
+  };
+var navigationOptions = {
+   target: 2, 
+    position: 2,
+    width: {value: 500, unit: "px"},
+    title: "Attachments"
+ };
+ Xrm.Navigation.navigateTo(pageInput, navigationOptions)
+    .then(
+        function () {
+            // Called when page opens
+        }
+    ).catch(
+        function (error) {
+            // Handle error
+        }
+    );
+
+}
+
+function onSave(executionContext) {
+    let formContext = executionContext.getFormContext(); // get formContext
+
+   let name = formContext.getAttribute("axem_name").getValue(); 
+   let contact= formContext.getAttribute("axem_contactforrecipient").getValue();
+   let documentTag = formContext.getAttribute("axem_documenttag").getValue();
+   let tagName = "";
+   if(documentTag == 531990000) {
+     tagName = "RFS";
+  } else {
+    tagName = "Referral info";
+  }
+  let fileName= contact[0]["name"] + "-" + tagName;
+
+  console.log("name",name);
+  console.log("docuent tag",documentTag );
+  console.log(contact);
+  
+   if(!name) {
+     console.log(contact[0]["name"]);
+     formContext.getAttribute("axem_name").setValue(contact[0]["name"]);
+  }
+  formContext.getAttribute("axem_filenameorsystemreference").setValue(fileName);
+
+  console.log(formContext);
+}

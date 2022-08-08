@@ -1,0 +1,2455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.22073.162" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>KvBookingRule</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Setting up Booking Rule" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.1.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>RSAAxemService</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="RSA Axem Service" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>rsa_ax</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>34858</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="bookableresourcebooking" behavior="0" />
+      <RootComponent type="9" schemaName="axem_bookingstatusreasons" behavior="0" />
+      <RootComponent type="61" schemaName="axem_kv-bookingrulesjs" behavior="0" />
+      <RootComponent type="62" schemaName="msdyn_FieldService" behavior="0" />
+      <RootComponent type="80" schemaName="msdyn_FieldService" behavior="0" />
+      <RootComponent type="300" schemaName="axem_statusupdatereasonpage_cc98b" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_appointment_bookableresourcebooking" displayName="msdyn_appointment_bookableresourcebooking" parentSchemaName="appointment" parentDisplayName="Appointment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="2" schemaName="axem_bookingstatusreason" displayName="Booking Status Reason" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="2" schemaName="owneridtype" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="300" schemaName="axem_statusupdatereasonpage_cc98b" displayName="Status Update Reason Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcebookingheader" displayName="Bookable Resource Booking Header" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcecategory" displayName="Bookable Resource Category" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcecategory" displayName="Bookable Resource Category" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcecategoryassn" displayName="Bookable Resource Category Assn" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcecharacteristic" displayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcecharacteristic" displayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookableresourcegroup" displayName="Bookable Resource Group" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookingstatus" displayName="Booking Status" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bookingstatus" displayName="Booking Status" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="characteristic" displayName="Characteristic" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="contractdetail" displayName="Contract Line" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="dynamicproperty" displayName="Property" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoicedetail" displayName="Invoice Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="knowledgearticleincident" displayName="Knowledge Article Incident" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreement" displayName="Agreement" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreement" displayName="Agreement" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingdate" displayName="Agreement Booking Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingdate" displayName="Agreement Booking Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingincident" displayName="Agreement Booking Incident" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingproduct" displayName="Agreement Booking Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingservice" displayName="Agreement Booking Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingservicetask" displayName="Agreement Booking Service Task" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementbookingsetup" displayName="Agreement Booking Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementinvoicedate" displayName="Agreement Invoice Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementsubstatus" displayName="Agreement Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agreementsubstatus" displayName="Agreement Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_analysisjob" displayName="Analysis Job" solution="msdyn_PowerAppsChecker (1.2.0.176)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_assetcategorytemplateassociation" displayName="Asset Category Template Association" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_assettemplateassociation" displayName="Asset Template Association" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookableresourcebookingquicknote" displayName="Bookable Resource Booking Quick Note" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingjournal" displayName="Booking Journal" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingjournal" displayName="Booking Journal" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingrule" displayName="Booking Rule" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingsetupmetadata" displayName="Booking Setup Metadata" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingsetupmetadata" displayName="Booking Setup Metadata" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingtimestamp" displayName="Booking Timestamp" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bookingtimestamp" displayName="Booking Timestamp" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_2c5fe86acc8b414b8322ae571000c799" displayName="Purchase Order Business Process" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b" displayName="CFS - IoT Alert Process Flow" solution="ConnectedFieldService (1.8.33.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_989e9b1857e24af18787d5143b67523b" displayName="Case to Work Order Business Process" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3" displayName="Agreement Business Process" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39" displayName="Work Order Business Process" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_customerassetcategory" displayName="Customer Asset Category" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_fs" displayName="Field service historical analytics" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_fs" displayName="Field service historical analytics" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_fspredictrs" displayName="Resource duration (preview)" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_fspredictwhd" displayName="Predictive duration (preview)" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_datainsightsandanalyticsfeature" displayName="Insights" solution="msdyn_DataInsightsAndAnalytics (1.1.22171.1)">
+          <package>msdyn_ServiceExtendedAnchor (9.0.22072.1005)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_datainsightsandanalyticsfeature" displayName="Insights" solution="msdyn_DataInsightsAndAnalytics (1.1.22171.1)">
+          <package>msdyn_ServiceExtendedAnchor (9.0.22072.1005)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_entityconfiguration" displayName="Entity Configuration" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_entityconfiguration" displayName="Entity Configuration" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fieldservicepricelistitem" displayName="Field Service Price List Item" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fieldservicesetting" displayName="Field Service Setting" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fieldservicesetting" displayName="Field Service Setting" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fieldservicesystemjob" displayName="Field Service System Job" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_functionallocation" displayName="Functional Location" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_functionallocation" displayName="Functional Location" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geofence" displayName="Geofence" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geofence" displayName="Geofence" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geofence" displayName="Geofence" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geofenceevent" displayName="Geofence Event" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geofenceevent" displayName="Geofence Event" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geolocationsettings" displayName="Geolocation Settings" solution="msdyn_Geolocation (1.0.0.109)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_geolocationsettings" displayName="Geolocation Settings" solution="msdyn_Geolocation (1.0.0.109)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttype" displayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttype" displayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttype_requirementgroup" displayName="Incident Type Requirement Group" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttypecharacteristic" displayName="Incident Type Characteristic" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttypeproduct" displayName="Incident Type Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttyperesolution" displayName="Incident Type Resolution" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttypeservice" displayName="Incident Type Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttypeservicetask" displayName="Incident Type Service Task" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttypessetup" displayName="Incident Types Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inspectiondefinition" displayName="Inspection Template Version" solution="msdyn_Inspections (1.0.21.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventoryadjustment" displayName="Inventory Adjustment" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventoryadjustment" displayName="Inventory Adjustment" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventoryadjustmentproduct" displayName="Inventory Adjustment Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventoryjournal" displayName="Inventory Journal" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventorytransfer" displayName="Inventory Transfer" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_inventorytransfer" displayName="Inventory Transfer" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevice" displayName="IoT Device" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevice" displayName="IoT Device" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicecategory" displayName="IoT Device Category" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicecategory" displayName="IoT Device Category" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicecommand" displayName="IoT Device Command" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicecommanddefinition" displayName="IoT Device Command Definition" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicecommanddefinition" displayName="IoT Device Command Definition" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdevicedatahistory" displayName="IoT Device Data History" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdeviceproperty" displayName="IoT Device Property" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotdeviceregistrationhistory" displayName="IoT Device Registration History" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotpropertydefinition" displayName="IoT Property Definition" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotpropertydefinition" displayName="IoT Property Definition" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotproviderinstance" displayName="IoT Provider Instance" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotproviderinstance" displayName="IoT Provider Instance" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotsettings" displayName="IoT Settings" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_kmfederatedsearchconfig" displayName="Search provider" solution="msdynce_KnowledgeManagementOnlineFeatures (9.0.22061.5010)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_knowledgearticletemplate" displayName="Knowledge Article Template" solution="msdynce_KnowledgeManagementFeatures (9.0.22061.5010)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_msteamssettingsv2" displayName="msdyn_msteamssettingsv2" solution="msdynce_OfficeProductivity (9.0.22074.10002)">
+          <package>msdynce_OfficeProductivityAnchor (9.0.22074.10002)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderinvoicingdate" displayName="Order Invoicing Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderinvoicingproduct" displayName="Order Invoicing Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderinvoicingsetup" displayName="Order Invoicing Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderinvoicingsetupdate" displayName="Order Invoicing Setup Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_organizationalunit" displayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_organizationalunit" displayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_payment" displayName="Payment" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_paymentdetail" displayName="Payment Detail" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_paymentmethod" displayName="Payment Method" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_paymentterm" displayName="Payment Term" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_paymentterm" displayName="Payment Term" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_postalcode" displayName="Postal Code" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_postalcode" displayName="Postal Code" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_priority" displayName="Priority" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_productinventory" displayName="Product Inventory" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_productinventory" displayName="Product Inventory" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_property" displayName="Property Definition" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_propertyassetassociation" displayName="Property Asset Association" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_propertylog" displayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_propertytemplateassociation" displayName="Property Template Association" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorder" displayName="Purchase Order" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorder" displayName="Purchase Order" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorder" displayName="Purchase Order" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderbill" displayName="Purchase Order Bill" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderbill" displayName="Purchase Order Bill" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderproduct" displayName="Purchase Order Product" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderproduct" displayName="Purchase Order Product" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderreceipt" displayName="Purchase Order Receipt" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderreceipt" displayName="Purchase Order Receipt" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderreceiptproduct" displayName="Purchase Order Receipt Product" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseorderreceiptproduct" displayName="Purchase Order Receipt Product" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseordersubstatus" displayName="Purchase Order SubStatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_purchaseordersubstatus" displayName="Purchase Order SubStatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotebookingincident" displayName="Quote Booking Incident" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotebookingproduct" displayName="Quote Booking Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotebookingservice" displayName="Quote Booking Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotebookingservicetask" displayName="Quote Booking Service Task" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotebookingsetup" displayName="Quote Booking Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quoteinvoicingproduct" displayName="Quote Invoicing Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quoteinvoicingsetup" displayName="Quote Invoicing Setup" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementcharacteristic" displayName="Requirement Characteristic" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementgroup" displayName="Requirement Group" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementgroup" displayName="Requirement Group" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementorganizationunit" displayName="Requirement Organization Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementresourcecategory" displayName="Requirement Resource Category" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementresourcepreference" displayName="Requirement Resource Preference" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_requirementstatus" displayName="Requirement Status" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resolution" displayName="Resolution" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resourcepaytype" displayName="Resource Pay Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resourcepaytype" displayName="Resource Pay Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resourcerequirement" displayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resourcerequirement" displayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_resourcerequirement" displayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmaproduct" displayName="RMA Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmareceipt" displayName="RMA Receipt" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmareceipt" displayName="RMA Receipt" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmareceiptproduct" displayName="RMA Receipt Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmasubstatus" displayName="RMA SubStatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rmasubstatus" displayName="RMA SubStatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtvproduct" displayName="RTV Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtvsubstatus" displayName="RTV Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtvsubstatus" displayName="RTV Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_scheduleboardsetting" displayName="Schedule Board Setting" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_schedulingparameter" displayName="Scheduling Parameter" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_servicetasktype" displayName="Service Task Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_servicetasktype" displayName="Service Task Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_shipvia" displayName="Ship Via" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_shipvia" displayName="Ship Via" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_taxcode" displayName="Tax Code" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_taxcode" displayName="Tax Code" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_taxcodedetail" displayName="Tax Code Detail" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_templateforproperties" displayName="Template For Properties" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timeentry" displayName="Time Entry" solution="msdyn_TESA (1.1.0.26)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timeentry" displayName="Time Entry" solution="msdyn_TESA (1.1.0.26)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timeentry" displayName="Time Entry" solution="msdyn_TESA (1.1.0.26)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timegroup" displayName="Fulfillment Preference" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timegroupdetail" displayName="Time Group Detail" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timegroupdetail" displayName="Time Group Detail" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timeoffrequest" displayName="Time Off Request" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_timeoffrequest" displayName="Time Off Request" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_uniquenumber" displayName="Unique Number" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_warehouse" displayName="Warehouse" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_warehouse" displayName="Warehouse" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workhourtemplate" displayName="Work Template" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workhourtemplate" displayName="Work Template" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordercharacteristic" displayName="Work Order Characteristic (Deprecated)" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderdetailsgenerationqueue" displayName="Work Order Details Generation Queue (Deprecated)" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderincident" displayName="Work Order Incident" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderproduct" displayName="Work Order Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderproduct" displayName="Work Order Product" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderresourcerestriction" displayName="Resource Restriction (Deprecated)" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderservice" displayName="Work Order Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderservice" displayName="Work Order Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderservicetask" displayName="Work Order Service Task" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="bookableresourcebooking" displayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorderservicetask" displayName="Work Order Service Task" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordersubstatus" displayName="Work Order Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordersubstatus" displayName="Work Order Substatus" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordertype" displayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordertype" displayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="pricelevel" displayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="pricelevel" displayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productassociation" displayName="Product Association" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productpricelevel" displayName="Price List Item" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productsubstitute" displayName="Product Relationship" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quotedetail" displayName="Quote Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="ratingmodel" displayName="Rating Model" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="ratingmodel" displayName="Rating Model" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="ratingvalue" displayName="Rating Value" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorderdetail" displayName="Order Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="territory" displayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="territory" displayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uomschedule" displayName="Unit Group" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_appointment_bookableresourcebooking" displayName="msdyn_appointment_bookableresourcebooking" parentSchemaName="appointment" parentDisplayName="Appointment" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_appointment_bookableresourcebooking" displayName="msdyn_appointment_bookableresourcebooking" parentSchemaName="appointment" parentDisplayName="Appointment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" displayName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="bookableresourceid" displayName="Bookable Resource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" displayName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Name" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_Crew" displayName="msdyn_bookableresource_bookableresourcebooking_Crew" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_agreementbookingdate" displayName="Agreement Booking Date" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_appointmentbookingid" displayName="Appointment Booking" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_appointment_bookableresourcebooking" displayName="msdyn_appointment_bookableresourcebooking" parentSchemaName="appointment" parentDisplayName="Appointment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_bookingsetupmetadataid" displayName="Booking Setup Metadata" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_crew" displayName="Crew" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" displayName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_requirementgroupid" displayName="Requirement Group" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_resourcegroup" displayName="Resource Group" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" displayName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_resourcerequirement" displayName="Resource Requirement" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_timegroupdetailselected" displayName="Time Group Detail Selected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_workorder" displayName="Work Order" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="resource" displayName="Resource" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" solution="msdynce_Scheduling (9.0.0.0)" />
+        <Dependent type="10" schemaName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" displayName="msdyn_bookableresource_bookableresourcebooking_ResourceGroup" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_agreementbookingdateid" displayName="Agreement Booking Date" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" displayName="msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate" parentSchemaName="msdyn_agreementbookingdate" parentDisplayName="Agreement Booking Date" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_bookingsetupmetadataid" displayName="Booking Setup Metadata" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_entitylogicalname" displayName="Entity Logical Name" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" displayName="msdyn_msdyn_bookingsetupmetadata_bookableresourcebooking" parentSchemaName="msdyn_bookingsetupmetadata" parentDisplayName="Booking Setup Metadata" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_requirementgroupid" displayName="Requirement Group" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" displayName="msdyn_requirementgroup_bookableresourcebooking_requirementgroupid" parentSchemaName="msdyn_requirementgroup" parentDisplayName="Requirement Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_resourcerequirementid" displayName="Resource Requirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" displayName="msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement" parentSchemaName="msdyn_resourcerequirement" parentDisplayName="Resource Requirement" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_timegroupdetail" parentDisplayName="Time Group Detail" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_timegroupdetailid" displayName="Time Group Detail" parentSchemaName="msdyn_timegroupdetail" parentDisplayName="Time Group Detail" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" displayName="msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected" parentSchemaName="bookableresourcebooking" parentDisplayName="Bookable Resource Booking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Work Order Number" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_workorderid" displayName="WO Number" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" displayName="msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View" displayName="Opportunity Product Inline Edit View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" id="{01010de7-749e-4fe6-8037-aca560a4fcbe}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Analytics reports" displayName="Analytics reports" parentSchemaName="msdyn_dataanalyticsreport_fspredictrs" parentDisplayName="Resource duration (preview)" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" id="{0115e9b6-c7c3-4091-bfd1-1e6dcd8bd0b2}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Prioritized IoT Alerts" displayName="Prioritized IoT Alerts" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="ConnectedFieldService (1.8.33.0)" id="{028cc0fd-b4ee-e911-a81d-000d3a06c538}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All active alerts" displayName="All active alerts" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.33.0)" id="{08738f58-2bc6-4dc5-a919-bfde2f5a575b}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Service-Maintenance Based Quotes" displayName="My Service-Maintenance Based Quotes" parentSchemaName="quote" parentDisplayName="Quote" solution="FieldService (8.8.0.88)" id="{0db79bb9-104d-e711-80cc-02155dc812c3}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Campaign Lookup View" displayName="Campaign Lookup View" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" id="{0e76dc73-2052-484e-8c00-a760f8d522ec}">
+          <package>msdynce_MarketingAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Current Property Log Values" displayName="Current Property Log Values" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{0e8a1d80-9abf-ea11-a81d-000d3a7599db}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Service-Maintenance Based Invoices" displayName="My Service-Maintenance Based Invoices" parentSchemaName="invoice" parentDisplayName="Invoice" solution="FieldService (8.8.0.88)" id="{13f8fe30-844d-e811-8147-000d3a0601ba}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Extended Product Price List - Products" displayName="Extended Product Price List - Products" parentSchemaName="productpricelevel" parentDisplayName="Price List Item" solution="msdynce_ProductManagement (9.0.4.0066)" id="{19103072-cd05-42c7-b174-f981d33b8beb}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Field Service Quote Product Inline edit vew" displayName="Field Service Quote Product Inline edit vew" parentSchemaName="quotedetail" parentDisplayName="Quote Line" solution="FieldService (8.8.0.88)" id="{197fd58d-c459-e611-8109-00155dbc6f11}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product Family Lookup View" displayName="Product Family Lookup View" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{19d7f2e0-e427-40fb-85e8-53e7cef2b166}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Categories associated with a resource" displayName="Categories associated with a resource" parentSchemaName="bookableresourcecategoryassn" parentDisplayName="Bookable Resource Category Assn" solution="msdynce_Scheduling (9.0.0.0)" id="{207a3738-fb9d-e511-80e7-00155db9c10d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Time Entries (Field Service)" displayName="All Time Entries (Field Service)" parentSchemaName="msdyn_timeentry" parentDisplayName="Time Entry" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{208781b4-da21-ea11-a81c-000d3af9a9ac}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Data Insights And Analytics Feature for Field Service" displayName="Data Insights And Analytics Feature for Field Service" parentSchemaName="msdyn_datainsightsandanalyticsfeature" parentDisplayName="Insights" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" id="{2218d3b3-a2a5-4348-964c-c684f42f7306}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Unit Group Units By Product Price Level" displayName="Unit Group Units By Product Price Level" parentSchemaName="uom" parentDisplayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" id="{26ff4574-e5b3-468d-b879-8bb27225d70b}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Functional Locations (Top-Level)" displayName="Active Functional Locations (Top-Level)" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{27332682-c585-ea11-a81f-000d3aab1e57}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active dashboard chart alerts" displayName="Active dashboard chart alerts" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.33.0)" id="{2bb54a90-e84a-e611-8104-00155de2881e}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products (Field Service Product Type is Inventory or Non Inventory)" displayName="Active Products (Field Service Product Type is Inventory or Non Inventory)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{2bf8e3b8-0030-e311-974a-00155da8fa1b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Services (Field Service Product Type is a Service)" displayName="Active Services (Field Service Product Type is a Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{2c824b6f-3b48-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Unit Groups Lookup View" displayName="Unit Groups Lookup View" parentSchemaName="uomschedule" parentDisplayName="Unit Group" solution="msdynce_ProductManagement (9.0.4.0066)" id="{2d013a3a-07cd-4163-8208-8e8e605492f4}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Service Lines View" displayName="Service Lines View" parentSchemaName="quotedetail" parentDisplayName="Quote Line" solution="FieldService (8.8.0.88)" id="{2de2e676-9459-e611-8109-00155dbc6f11}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Service-Maintenance Based Open Opportunities" displayName="My Service-Maintenance Based Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" id="{39dfa713-104d-e711-80cc-02155dc812c3}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product (Field Service Product Type is not a Service)" displayName="Product (Field Service Product Type is not a Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{3a9d8564-6a47-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Field Service Order Based Product Inline Edit View" displayName="Field Service Order Based Product Inline Edit View" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="FieldService (8.8.0.88)" id="{3e70a7dd-565b-e611-810d-00155db93107}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Product Relationships" displayName="All Product Relationships" parentSchemaName="productsubstitute" parentDisplayName="Product Relationship" solution="msdynce_ProductManagement (9.0.4.0066)" id="{400c861d-f355-42b2-9899-2b3196cbd71f}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Service-Maintenance Based Orders" displayName="All Service-Maintenance Based Orders" parentSchemaName="salesorder" parentDisplayName="Order" solution="FieldService (8.8.0.88)" id="{40e6993c-834d-e811-8147-000d3a0601ba}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Associated Knowledge Records View" displayName="Associated Knowledge Records View" parentSchemaName="knowledgearticleincident" parentDisplayName="Knowledge Article Incident" solution="msdynce_Service (9.0.5.56)" id="{4ce7d553-9bba-4d8f-b209-899af9d3937c}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Custom Work Order Service Task View (Deprecated)" displayName="Custom Work Order Service Task View (Deprecated)" parentSchemaName="activitypointer" parentDisplayName="Activity" solution="FieldService (8.8.0.88)" id="{4ceb0345-5756-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Service-Maintenance Based Orders" displayName="My Service-Maintenance Based Orders" parentSchemaName="salesorder" parentDisplayName="Order" solution="FieldService (8.8.0.88)" id="{4d14a410-114d-e711-80cc-02155dc812c3}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Unit Group Units Lookup View" displayName="Unit Group Units Lookup View" parentSchemaName="uom" parentDisplayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" id="{4da6f46b-3649-4d0e-b5d2-ccb590f4227d}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Analytics reports" displayName="Analytics reports" parentSchemaName="msdyn_dataanalyticsreport_fspredictwhd" parentDisplayName="Predictive duration (preview)" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" id="{4dda46cd-6e0d-4294-9e89-d430400578ff}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Registered Assets" displayName="Registered Assets" parentSchemaName="msdyn_customerasset" parentDisplayName="Customer Asset" solution="ConnectedFieldService (1.8.33.0)" id="{4f2f6a85-816a-e611-8106-00155db8820b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Work Order Entitlements" displayName="All Work Order Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="FieldService (8.8.0.88)" id="{4f76fd19-b5f9-e811-815b-000d3a060286}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Resource Category Assns" displayName="Active Resource Category Assns" parentSchemaName="bookableresourcecategoryassn" parentDisplayName="Bookable Resource Category Assn" solution="msdynce_Scheduling (9.0.0.0)" id="{533d1548-1e86-49cb-8c06-bff8ca02591d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Service-Maintenance Based Opportunities" displayName="All Service-Maintenance Based Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" id="{55486ae9-814d-e811-8147-000d3a0601ba}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quote Lines" displayName="Quote Lines" parentSchemaName="quotedetail" parentDisplayName="Quote Line" solution="FieldService (8.8.0.88)" id="{556deeeb-5a8a-e611-810f-00155dbc6f12}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active IoT Alerts for a Device" displayName="Active IoT Alerts for a Device" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="msdyn_IoTAssetCommon (1.9.0.0)" id="{5633f4c2-abdc-400f-a946-5e966deb21f5}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Competitors (summary)" displayName="All Competitors (summary)" parentSchemaName="competitor" parentDisplayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" id="{57bca9ac-87a0-4c28-adc8-2d0a4645f29e}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products Lookup View" displayName="Active Products Lookup View" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{58afc3c5-8add-4552-98cb-473bc8f75619}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Services (Field Service Product Type is Inventory or Non Inventory)" displayName="Inactive Services (Field Service Product Type is Inventory or Non Inventory)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{62e2ac64-0230-e311-974a-00155da8fa1b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products (Field Service Product Type is Inventory)" displayName="Active Products (Field Service Product Type is Inventory)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{637d30fc-5ae1-e111-bbe0-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Properties - Product Families" displayName="Properties - Product Families" parentSchemaName="dynamicproperty" parentDisplayName="Property" solution="msdynce_ProductManagement (9.0.4.0066)" id="{63abc191-f333-47e1-9f3f-ef1cbf8df1c0}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Contracts" displayName="Active Contracts" parentSchemaName="contract" parentDisplayName="Contract" solution="msdynce_Service (9.0.5.56)" id="{646de3ee-ebfb-4d19-8a44-4a619505e188}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Services (Field Service Product Type is Service)" displayName="Active Services (Field Service Product Type is Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{65cd6af4-ff0f-e311-974a-00155da8fa1b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Accounts" displayName="All Accounts" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Order Products" displayName="All Order Products" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="msdynce_Sales (9.0.4.0076)" id="{68972f8a-3a2a-42ea-b5dd-40b56f497618}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Connected Customer Assets" displayName="Connected Customer Assets" parentSchemaName="msdyn_customerasset" parentDisplayName="Customer Asset" solution="msdyn_IoTAssetCommon (1.9.0.0)" id="{6da9a965-1899-471c-9478-915527225a92}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Customer Assets" displayName="Active Customer Assets" parentSchemaName="msdyn_customerasset" parentDisplayName="Customer Asset" solution="msdyn_AssetCommon (1.0.26.9)" id="{6ecb03a4-acda-44ae-83e3-c60ba8338dbb}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Customer Assets" displayName="Inactive Customer Assets" parentSchemaName="msdyn_customerasset" parentDisplayName="Customer Asset" solution="msdyn_AssetCommon (1.0.26.9)" id="{718410e5-6a96-4d6e-9a7c-781265eedfb9}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Access Mode Interactive Users" displayName="Access Mode Interactive Users" parentSchemaName="systemuser" parentDisplayName="User" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{71ff097f-a986-eb11-b1ad-002248216f73}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Associated Cases" displayName="Associated Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{72210bbb-d9d5-42df-8efd-39395a3cd7a7}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Property Logs" displayName="Active Property Logs" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{76901db2-cd2a-4cea-b7ac-a47e18b55b84}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Service-Maintenance Based Opportunity Quotes" displayName="Service-Maintenance Based Opportunity Quotes" parentSchemaName="quote" parentDisplayName="Quote" solution="FieldService (8.8.0.88)" id="{78608e42-a191-e611-8114-00155db8ce11}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Bookable Resource Characteristics" displayName="Active Bookable Resource Characteristics" parentSchemaName="bookableresourcecharacteristic" parentDisplayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" id="{7e7fe0be-277f-4f14-9484-261412680ab4}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Field Service Order Based Lines" displayName="Field Service Order Based Lines" parentSchemaName="invoicedetail" parentDisplayName="Invoice Product" solution="FieldService (8.8.0.88)" id="{7ee3fde0-8d7f-e611-8110-00155de25f03}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive IoT alerts" displayName="Inactive IoT alerts" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.33.0)" id="{85d8bcc6-f396-41c4-94f8-24b4a9970632}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product Lookup View" displayName="Product Lookup View" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{8ba625b2-6a2a-4735-bab2-0c74ae8442a4}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product Association Associated View" displayName="Product Association Associated View" parentSchemaName="productassociation" parentDisplayName="Product Association" solution="msdynce_ProductManagement (9.0.4.0066)" id="{8f4f0419-a73a-4ac5-b59b-38fe04f21336}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Contract Line With Allotments" displayName="Contract Line With Allotments" parentSchemaName="contractdetail" parentDisplayName="Contract Line" solution="msdynce_Service (9.0.5.56)" id="{8fa2705c-7e4c-4c0e-b611-4593b35a4c9e}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Account Entitlements" displayName="Account Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{961bf8aa-042f-4f4d-bcca-935bfc9a6994}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Sales Order Lines" displayName="Sales Order Lines" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="FieldService (8.8.0.88)" id="{96b55939-5a8a-e611-810f-00155dbc6f12}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Case Lookup View" displayName="Case Lookup View" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{9ac51863-58c7-49a0-adcc-afd9a4c3ee59}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Order Product Inline Edit View" displayName="Order Product Inline Edit View" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="msdynce_Sales (9.0.4.0076)" id="{9ac6a187-5fb8-445c-914a-3b4a33c0017e}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Property Log Lookup View" displayName="Property Log Lookup View" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{9efabf2e-854a-41fe-8d72-c172e505f90f}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Functional Locations (Field Service)" displayName="Active Functional Locations (Field Service)" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{9fc31307-bf85-ea11-a81f-000d3aab1e57}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Invoice Product Inline Edit View" displayName="Invoice Product Inline Edit View" parentSchemaName="invoicedetail" parentDisplayName="Invoice Product" solution="msdynce_Sales (9.0.4.0076)" id="{a1faa578-24af-4ed6-b36d-47842e7e9b1e}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Functional Locations (Field Service)" displayName="Inactive Functional Locations (Field Service)" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{a5d1f403-c185-ea11-a81f-000d3aab1e57}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Entitlements" displayName="All Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{aa69e7e2-913a-4a5a-8609-8ca443554909}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Time Entries (Field Service)" displayName="My Time Entries (Field Service)" parentSchemaName="msdyn_timeentry" parentDisplayName="Time Entry" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{ac809095-d907-ea11-a81c-000d3a6d2c6a}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Territories Lookup View" displayName="Territories Lookup View" parentSchemaName="territory" parentDisplayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)" id="{ad81b2ca-9789-4465-8c56-94c10830a6ed}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Resource Characteristics" displayName="Resource Characteristics" parentSchemaName="bookableresourcecharacteristic" parentDisplayName="Bookable Resource Characteristic" solution="msdynce_Scheduling (9.0.0.0)" id="{ae9e5ee4-02a9-e511-80e8-00155db9c10d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products (Field Service Product Type is not a Service)" displayName="Active Products (Field Service Product Type is not a Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{af259750-0010-e311-974a-00155da8fa1b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Agreement Booking Service Tasks View (Deprecated)" displayName="Agreement Booking Service Tasks View (Deprecated)" parentSchemaName="activitypointer" parentDisplayName="Activity" solution="FieldService (8.8.0.88)" id="{b12aac61-1a98-e111-bbdb-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Property Logs" displayName="Inactive Property Logs" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{b5fb691b-563f-4246-8244-a20a36f74938}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Primary alerts" displayName="Primary alerts" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.33.0)" id="{b96d141d-a429-e611-8107-00155db9cd0a}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Products in Parent Price List" displayName="Products in Parent Price List" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{bcc509ee-1444-4a95-aed2-128efd85ffd5}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Field Service Opportunity Based Product Inline Edit View" displayName="Field Service Opportunity Based Product Inline Edit View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="FieldService (8.8.0.88)" id="{c9aa8500-1b5c-e611-8113-00155db93108}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products (Field Service)" displayName="Active Products (Field Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{ccf8b615-db4d-e811-8148-000d3a061a01}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Service-Maintenance Based Invoices" displayName="All Service-Maintenance Based Invoices" parentSchemaName="invoice" parentDisplayName="Invoice" solution="FieldService (8.8.0.88)" id="{ce3f5dda-834d-e811-8147-000d3a0601ba}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quote Product Inline Edit View" displayName="Quote Product Inline Edit View" parentSchemaName="quotedetail" parentDisplayName="Quote Line" solution="msdynce_Sales (9.0.4.0076)" id="{cf23f371-4c2e-44df-bcef-c8971249bbe0}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IoT alerts command activity" displayName="IoT alerts command activity" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.33.0)" id="{cf47ae20-e542-e611-80e3-3863bb2eb408}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Predictive work hour duration setting page" displayName="Predictive work hour duration setting page" parentSchemaName="msdyn_datainsightsandanalyticsfeature" parentDisplayName="Insights" solution="msdyn_InsightsAnalyticsFSConfiguration (1.0.21248.1)" id="{d3ff5bd1-5c28-42dd-bff7-708ea22dd3a5}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Assets With Registration Errors" displayName="Assets With Registration Errors" parentSchemaName="msdyn_customerasset" parentDisplayName="Customer Asset" solution="ConnectedFieldService (1.8.33.0)" id="{d70bcff2-816a-e611-8106-00155db8820b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Service Maintenance Line Grid View" displayName="Service Maintenance Line Grid View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="FieldService (8.8.0.88)" id="{d85fb95c-fe58-e611-810c-00155db93107}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Property Log Associated View" displayName="Property Log Associated View" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{db43c1cc-f48b-4e3e-979a-3a5a8e8f4c5d}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Property Log Advanced Find View" displayName="Property Log Advanced Find View" parentSchemaName="msdyn_propertylog" parentDisplayName="Property Log" solution="msdyn_AssetCommon (1.0.26.9)" id="{db87b834-578d-457e-a008-1a2f4afb973f}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Analytics reports" displayName="Analytics reports" parentSchemaName="msdyn_dataanalyticsreport_fs" parentDisplayName="Field service historical analytics" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" id="{e2171e5c-2048-49ae-92ba-0096f6ceab38}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Analytics reports" displayName="Analytics reports" parentSchemaName="msdyn_dataanalyticsreport_fs" parentDisplayName="Field service historical analytics" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" id="{e465df2a-a933-4bc9-9736-a3945d915b3f}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Asset suggestions setting page" displayName="Asset suggestions setting page" parentSchemaName="msdyn_datainsightsandanalyticsfeature" parentDisplayName="Insights" solution="msdyn_InsightsAnalyticsFSConfiguration (1.0.21248.1)" id="{e4e8a7d6-ced5-ea11-a813-000d3a8ab142}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="OrderBasedServiceMaintanaceLines" displayName="OrderBasedServiceMaintanaceLines" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="FieldService (8.8.0.88)" id="{e6f31fae-de59-e611-810c-00155db93107}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Valid Entitlements for Cases" displayName="Valid Entitlements for Cases" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{e7ea283b-0490-4956-939b-3325e0798fb8}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IoT alerts with work orders" displayName="IoT alerts with work orders" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="ConnectedFieldService (1.8.33.0)" id="{e8ac1a8f-bd5a-4fdd-9d92-66dcb37670b4}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Order Product Inline Edit View" displayName="Order Product Inline Edit View" parentSchemaName="salesorderdetail" parentDisplayName="Order Line" solution="FieldService (8.8.0.88)" id="{ed2b1f1e-575b-e611-810d-00155db93107}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Price List Lookup View" displayName="Price List Lookup View" parentSchemaName="pricelevel" parentDisplayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)" id="{ee499892-35e1-4d07-a1b7-bb69fe9bfd42}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Service-Maintenance Based Quotes" displayName="All Service-Maintenance Based Quotes" parentSchemaName="quote" parentDisplayName="Quote" solution="FieldService (8.8.0.88)" id="{f3dd6cc2-844d-e811-8147-000d3a0601ba}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Product Price List - Price List" displayName="Product Price List - Price List" parentSchemaName="productpricelevel" parentDisplayName="Price List Item" solution="msdynce_ProductManagement (9.0.4.0066)" id="{f89e7f79-8829-4433-b4cc-b1c1e2829a95}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Products (Field Service)" displayName="All Products (Field Service)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (8.8.0.88)" id="{f96027ce-5a35-48ac-8ac9-9d7235c3fa98}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Phone to Case Process" solution="msdynce_Service (9.0.5.56)" id="{0ffbcde4-61c1-4355-aa89-aa1d7b2b8792}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Purchase Order Business Process" solution="FieldService (8.8.0.88)" id="{2c5fe86a-cc8b-414b-8322-ae571000c799}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="CFS - IoT Alert Process Flow" solution="ConnectedFieldService (1.8.33.0)" id="{477c16f5-9170-487b-8b4d-c895c5dcd09b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Lead to Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Case to Work Order Business Process" solution="FieldService (8.8.0.88)" id="{989e9b18-57e2-4af1-8787-d5143b67523b}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Agreement Business Process" solution="FieldService (8.8.0.88)" id="{baa0a411-a239-410c-b8bd-ed8b5fdd88e3}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Work Order Business Process" solution="FieldService (8.8.0.88)" id="{d3d97bac-8c29-4105-840e-99e37a9d1c39}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Top 10 Billing Accounts" displayName="Top 10 Billing Accounts" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{52af8b9c-1f4e-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Incident Types by month" displayName="Incident Types by month" parentSchemaName="msdyn_workorderincident" parentDisplayName="Work Order Incident" solution="FieldService (8.8.0.88)" id="{7ccd620f-294e-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Actual Revenues By Fiscal Period" displayName="Actual Revenues By Fiscal Period" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)" id="{888f9f6f-385f-df11-ae90-00155d2e3002}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active Work Orders By Type" displayName="Active Work Orders By Type" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{8e746648-1a4e-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Service Quick Create" parentDisplayName="Incident Type Service" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{0096bd39-164a-4a5b-b7ec-564d265dc133}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Bookable Resource Group" solution="msdynce_Scheduling (9.0.0.0)" id="{02e53949-e718-41d4-88ac-86f9c7846ce3}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Requirement Group" solution="FieldService (8.8.0.88)" id="{0c819a32-b89f-4d46-82ae-2e21f643990c}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Resolve By SLA" parentDisplayName="SLA KPI Instance" solution="msdynce_ServiceLevelAgreement (9.0.22072.1003)" id="{19b14c51-3d43-4d56-ab34-49c540bf468c}">
+          <package>msdynce_ServiceLevelAgreementAnchor (9.0.22072.1003)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Order Line" solution="FieldService (8.8.0.88)" id="{1b85d96c-5449-4c87-bb96-500150a15faf}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Quote Line" solution="msdynce_Sales (9.0.4.0076)" id="{1ff13845-48d3-4744-bc69-43b691931a6e}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Service" solution="FieldService (8.8.0.88)" id="{209b3c02-6fcd-4118-b13f-16a4e4c0f411}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="User Information Form" parentDisplayName="User" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{20bc9121-0a7c-46b6-9c11-5db245e8214d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact - Mobile" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" id="{28b5b9b6-dfa2-45d6-8a81-3f6ba02a098a}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Order Line" solution="msdynce_Sales (9.0.4.0076)" id="{2bb64321-6da0-4a1a-8466-62b40cc6bc7a}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Characteristic Quick Create" parentDisplayName="Incident Type Characteristic" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{35a0dd54-ba91-45ec-86a5-c107449bc04e}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Product Quick Create FS 5x5" parentDisplayName="Product" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{46a3bdc2-b561-4666-97a7-7de5aa831580}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Create - Field Service" parentDisplayName="Contact" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{477d15ad-60b2-4d8e-9508-b3d2b87c9868}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Case" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{4a63c8d1-6c1e-48ec-9db4-3e6c7155334c}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Administrator Dashboard" solution="FieldService (8.8.0.88)" id="{4cbb8bb4-1f4e-e111-93b3-000c2959f9b8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Order" solution="FieldService (8.8.0.88)" id="{578e22c0-2084-490d-8019-4b55dbbfadc9}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order - Service" parentDisplayName="Work Order" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{613513a1-322d-4ecc-81bd-bd65640d834c}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Opportunity Line" solution="FieldService (8.8.0.88)" id="{6378f4aa-3c80-4761-bc91-71c76acaee7f}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Invoice Product" solution="msdynce_Sales (9.0.4.0076)" id="{684b159c-c312-4248-8b0f-0c164abe7d9e}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Product" solution="FieldService (8.8.0.88)" id="{68d58aeb-7ed3-42f9-a914-3889b0476dd6}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{6bfd1f9f-759e-459a-b752-3536e6513d25}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Time Entry" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{6d5b41ce-e021-4a9b-8411-c315f517a122}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Characteristic" solution="FieldService (8.8.0.88)" id="{6e514d91-07d9-4e4b-85c2-547ca636f014}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Quote Line" solution="FieldService (8.8.0.88)" id="{6e8748df-74c2-4f6b-b098-32e3865d8ef9}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="OpportunityProduct" parentDisplayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" id="{6e9a1c27-c09c-461b-8542-9ffef891f7ab}">
+          <package>msdynce_SalesAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account - Mobile" parentDisplayName="Account" solution="FieldService (8.8.0.88)" id="{74da4947-5d1d-4400-9f99-c6ed578211bb}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order Type Quick Create FS 5x5" parentDisplayName="Work Order Type" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{77cd0dec-da2f-4914-a57c-346271a5b720}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order Quick View" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{79c33fb4-7126-41a8-9dff-13e4462c9b19}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order - Notes" parentDisplayName="Work Order" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{7fac7159-31a5-4869-8f2f-ee88dd6c0f3a}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Main Form" parentDisplayName="Geofence Event" solution="msdyn_Geofencing (1.1.0.160)" id="{805b886a-cf78-4d66-94d0-fcb0d44ce5e8}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Summary Card" parentDisplayName="Account" solution="FieldService (8.8.0.88)" id="{894155a3-95d5-4881-b9c3-04444cef1bcc}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Price List Quick Create 5x5" parentDisplayName="Price List" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{8ba31a9c-df98-4471-b9bf-c8a7a15ba60d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Resolution Quick Create Form" parentDisplayName="Incident Type Resolution" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{8bbd3024-680e-49d0-8bd8-23c7a9374656}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="New Form" parentDisplayName="Geofence" solution="msdyn_Geofencing (1.1.0.160)" id="{8e3e2783-c6cb-4c9e-8be7-7dc9748b3134}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Requirement Group" solution="FieldService (8.8.0.88)" id="{8e69bd91-d258-4681-9c77-851ecf524826}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Main Form" parentDisplayName="Geofence" solution="msdyn_Geofencing (1.1.0.160)" id="{8efcc095-5863-4575-9277-459b607eef88}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Service Task" solution="FieldService (8.8.0.88)" id="{9143f45c-416b-429b-a0c6-07b0828b071c}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Quick Create" parentDisplayName="Time Entry" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{93a02d7f-8957-46c7-b0a3-882055935f20}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{a640be62-63f6-4027-90d7-48c014a7c6f3}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Product Quick Create" parentDisplayName="Incident Type Product" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{adced27a-28e4-4439-81f1-e402255aabb0}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account card" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}">
+          <package>msdynce_AppCommonAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Quote" solution="FieldService (8.8.0.88)" id="{b3fa6477-581b-411f-a725-0ab32d8edb8f}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order - Customer" parentDisplayName="Work Order" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{c0ebdf20-f27f-4acc-8c9f-a9a202a5e917}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order Create" parentDisplayName="Work Order" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{ccf0b34e-a265-4005-bd73-be6f4fe30dd7}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Service Task Type Quick Create 5x5" parentDisplayName="Service Task Type" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" id="{cea28746-8d51-4c2c-9672-16e0d255893a}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Service Task Quick Create" parentDisplayName="Incident Type Service Task" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{dabd8ce6-1284-44e6-9f86-3747799764cb}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick Create Work Order" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{e0d97cdc-4c20-4e03-bc2a-6dbc6cb1d2c2}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{e3b6ddb7-8df0-4410-ac7b-fd32e5053d38}">
+          <package>msdynce_LeadManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Quick Create - Field Service" parentDisplayName="Account" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{e40cb98a-e5a5-4d22-93fd-7d1f0c0cf060}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Invoice" solution="FieldService (8.8.0.88)" id="{e42e464f-c249-4005-896e-cdee472d7e1e}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Knowledge Article" parentDisplayName="Knowledge Article" solution="msdynce_KnowledgeManagement (9.0.1.33)" id="{e7ef555e-7f57-4164-b604-59fa4f0a7e2e}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Main Form" parentDisplayName="Entity Configuration" solution="msdyn_Geofencing (1.1.0.160)" id="{eb5b1ab4-37e4-4677-aad2-28cfaa21d49d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="First Response SLA" parentDisplayName="SLA KPI Instance" solution="msdynce_ServiceLevelAgreement (9.0.22072.1003)" id="{ede9dac3-e143-4be4-acc8-237309e31210}">
+          <package>msdynce_ServiceLevelAgreementAnchor (9.0.22072.1003)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="IoT Device" solution="IoTConnector (1.8.33.0)" id="{ee4585cd-112b-4384-bfe3-4c3247e293b6}">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Connected Field Service Dashboard" solution="ConnectedFieldService (1.8.33.0)" id="{f0698b5f-5c5e-e611-810b-00155dbd6a1d}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Work Order - Mobile" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" id="{f25cecf6-2f00-4eab-aeef-d773af32e027}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Incident Type Requirement Group Quick Create" parentDisplayName="Incident Type Requirement Group" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{fad812c9-5b41-49d7-af90-f0ebcaf860e1}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Price Level" parentDisplayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)" id="{fd57cc72-a5b1-4e65-a5db-0127da5941f7}">
+          <package>msdynce_ProductManagementAnchor (9.0.22074.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Incident Type Resolution" solution="msdyn_FieldService_patch_update (8.8.69.53)" id="{fe0dd6c3-f155-42ce-be36-6a86f17dc374}" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Geofencing/msdyn_OpenGeofencingConfigurationSettingsForm.html" displayName="Geofencing/msdyn_OpenGeofencingConfigurationSettingsForm.html" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Icons/msdyn_EntityConfigurations.svg" displayName="Icons/msdyn_EntityConfigurations.svg" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Icons/msdyn_GeofenceEvent.svg" displayName="Icons/msdyn_GeofenceEvent.svg" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Icons/msdyn_Geofences.svg" displayName="Icons/msdyn_Geofences.svg" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Icons/msdyn_GeofencingSettings.svg" displayName="Icons/msdyn_GeofencingSettings.svg" solution="msdyn_Geofencing (1.1.0.160)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Analytics/imgs/AnalyticsAndInsightsSettingsIcon.svg" displayName="msdyn_/Analytics/imgs/AnalyticsAndInsightsSettingsIcon.svg" solution="msdyn_DataInsightsAndAnalytics (1.1.22171.1)">
+          <package>msdyn_ServiceExtendedAnchor (9.0.22072.1005)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Analytics/imgs/FieldServiceReportIcon.svg" displayName="msdyn_/Analytics/imgs/FieldServiceReportIcon.svg" solution="msdyn_DataInsightsAndAnalyticsForFS (1.0.21248.1)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/FieldServiceHealth/icons/AnalysisJob.svg" displayName="msdyn_/FieldServiceHealth/icons/AnalysisJob.svg" solution="msdynce_FieldServiceHealth (2.2.4.190)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Geolocation/Icons/msdyn_GeolocationSettings.svg" displayName="msdyn_/Geolocation/Icons/msdyn_GeolocationSettings.svg" solution="msdyn_Geolocation (1.0.0.109)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icon/GetStarted.svg" displayName="msdyn_/Icon/GetStarted.svg" solution="msdyn_FieldServiceAdminExp (1.0.10.61)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Administration.svg" displayName="msdyn_/Icons/SVG/Administration.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Agreement.svg" displayName="msdyn_/Icons/SVG/Agreement.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/BookableResource.SVG" displayName="msdyn_/Icons/SVG/BookableResource.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Calendar.svg" displayName="msdyn_/Icons/SVG/Calendar.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Characteristic.svg" displayName="msdyn_/Icons/SVG/Characteristic.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/CustomerAssetCategory.svg" displayName="msdyn_/Icons/SVG/CustomerAssetCategory.svg" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/DeliveryTruck.SVG" displayName="msdyn_/Icons/SVG/DeliveryTruck.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/E713-Settings.SVG" displayName="msdyn_/Icons/SVG/E713-Settings.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/EE30-ProductVariant.SVG" displayName="msdyn_/Icons/SVG/EE30-ProductVariant.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/EFD7-CRMSales.SVG" displayName="msdyn_/Icons/SVG/EFD7-CRMSales.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/EFDF-ContactOrders.SVG" displayName="msdyn_/Icons/SVG/EFDF-ContactOrders.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/F7DB-LearningTools.SVG" displayName="msdyn_/Icons/SVG/F7DB-LearningTools.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/IncidentTriangle.SVG" displayName="msdyn_/Icons/SVG/IncidentTriangle.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/icons/SVG/InspectionForms.svg" displayName="msdyn_/icons/SVG/InspectionForms.svg" solution="msdyn_Inspections (1.0.21.0)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Inventory.svg" displayName="msdyn_/Icons/SVG/Inventory.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Mailbox.SVG" displayName="msdyn_/Icons/SVG/Mailbox.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/People.svg" displayName="msdyn_/Icons/SVG/People.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Priorities.SVG" displayName="msdyn_/Icons/SVG/Priorities.SVG" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Product.svg" displayName="msdyn_/Icons/SVG/Product.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Property.svg" displayName="msdyn_/Icons/SVG/Property.svg" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/PurchaseOrderReceipt.svg" displayName="msdyn_/Icons/SVG/PurchaseOrderReceipt.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Resolution.svg" displayName="msdyn_/Icons/SVG/Resolution.svg" solution="msdyn_FieldService_patch_update (8.8.69.53)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/RMA.svg" displayName="msdyn_/Icons/SVG/RMA.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/RTV.svg" displayName="msdyn_/Icons/SVG/RTV.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/ServiceTaskType.svg" displayName="msdyn_/Icons/SVG/ServiceTaskType.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Silver.SVG" displayName="msdyn_/Icons/SVG/Silver.SVG" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/TemplateForProperties.svg" displayName="msdyn_/Icons/SVG/TemplateForProperties.svg" solution="msdyn_AssetCommon (1.0.26.9)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/TimeGroup.svg" displayName="msdyn_/Icons/SVG/TimeGroup.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/TimeOffRequest.svg" displayName="msdyn_/Icons/SVG/TimeOffRequest.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/Warehouse.svg" displayName="msdyn_/Icons/SVG/Warehouse.svg" solution="FieldServiceCommon (1.0.0.217)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/WorkOrders.svg" displayName="msdyn_/Icons/SVG/WorkOrders.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SVG/World.svg" displayName="msdyn_/Icons/SVG/World.svg" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/IoT/Images/SVG/IoTSettings/IoTSettings.svg" displayName="msdyn_/IoT/Images/SVG/IoTSettings/IoTSettings.svg" solution="IoTConnector (1.8.33.0)">
+          <package>msdynce_ServiceAnchor (9.0.22074.1010)</package>
+        </Required>
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="msdyn_FieldService" solution="FieldService (8.8.0.88)" />
+        <Dependent type="62" schemaName="msdyn_FieldService" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="msdyn_FieldService" displayName="Field Service" solution="FieldService (8.8.0.88)" />
+        <Dependent type="80" schemaName="msdyn_FieldService" displayName="Field Service" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

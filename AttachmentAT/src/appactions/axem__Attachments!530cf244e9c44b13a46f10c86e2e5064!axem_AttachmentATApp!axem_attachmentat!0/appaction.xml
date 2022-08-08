@@ -1,0 +1,32 @@
+<appaction uniquename="axem__Attachments!530cf244e9c44b13a46f10c86e2e5064!axem_AttachmentATApp!axem_attachmentat!0">
+  <appmoduleid>
+    <uniquename>axem_AttachmentATApp</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Attachments">
+    <label description="Attachments" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>5.5000000000</buttonsequencepriority>
+  <buttontooltiptitle default="Attachment Canvas Page">
+    <label description="Attachment Canvas Page" languagecode="1033" />
+  </buttontooltiptitle>
+  <context>1</context>
+  <contextentity>
+    <logicalname>axem_attachmentat</logicalname>
+  </contextentity>
+  <contextvalue>axem_attachmentat</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Attachments!530cf244e9c44b13a46f10c86e2e5064</name>
+  <onclickeventjavascriptfunctionname>openPage</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>0603208f-2204-ed11-82e6-6045bdaaa0ac</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

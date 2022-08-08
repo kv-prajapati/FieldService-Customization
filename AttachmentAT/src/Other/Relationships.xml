@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="axem_axem_attachmentat_AccountForRecipient_acc" />
+  <EntityRelationship Name="axem_axem_attachmentat_ContactForRecipient_con" />
+  <EntityRelationship Name="business_unit_axem_attachmentat" />
+  <EntityRelationship Name="lk_axem_attachmentat_createdby" />
+  <EntityRelationship Name="lk_axem_attachmentat_modifiedby" />
+  <EntityRelationship Name="owner_axem_attachmentat" />
+  <EntityRelationship Name="team_axem_attachmentat" />
+  <EntityRelationship Name="user_axem_attachmentat" />
+</EntityRelationships>
